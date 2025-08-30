@@ -51,5 +51,5 @@ Progress is being tracked in the following document:
 - **Frontend:** ReactJS  
 - **Backend:** Spring Boot, FastAPI (Gemini API integration)  
 - **Database:** MySQL  
-- **Testing:** Postman, Selenium  
+- **Testing:** Postman
 - **Other:** Gmail API for notifications  
