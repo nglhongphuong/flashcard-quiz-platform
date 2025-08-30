@@ -2,13 +2,10 @@
 
 - **Personal capstone project (Jul 2025 – Sep 2025, 10 weeks)**
    A web-based learning platform that integrates flashcards and quizzes to help students review, memorize, and test knowledge more effectively. The system combines three main approaches: learning with flashcards, practicing with quizzes, and taking tests.
----
 ## Overview
 - This project was built as an **individual capstone project**.  
 Its purpose is to provide an **interactive and flexible study tool** that supports both personal learning and community engagement.
----
 ## Main Features
-
 ### User Functions
 - **Account Management**
   - Register a new account
