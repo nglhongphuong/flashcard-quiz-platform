@@ -51,12 +51,13 @@ public class SecurityConfig {
 //            "/auth/refresh",
             "/lesson/**",
             "/flashcard/**",
-         // Cho swagger public
-        "/swagger-ui/**",
-        "/v3/api-docs/**",
-        "/swagger-ui.html"
-
     };
+    private final String[] SWAGGER_ENDPOINTS = {
+    "/swagger-ui/**",
+    "/v3/api-docs/**",
+    "/swagger-ui.html"
+};
+
 
     @Autowired
     private  CustomJwtDecoder customJwtDecoder;
@@ -68,7 +69,7 @@ public class SecurityConfig {
                 .requestMatchers(HttpMethod.POST,  "/account/create").permitAll()
                 .requestMatchers(HttpMethod.POST, "/auth/**").permitAll()
                 .requestMatchers(HttpMethod.GET, PUBLIC_ENDPOINTS).permitAll()
-
+                .requestMatchers(SWAGGER_ENDPOINTS).permitAll() 
                 .requestMatchers("/admin/**").hasRole("ADMIN") // ROLE_ROLE_ADMIN
                 .anyRequest().authenticated()
         );
