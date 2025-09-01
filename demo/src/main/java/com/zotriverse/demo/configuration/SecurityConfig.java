@@ -50,7 +50,11 @@ public class SecurityConfig {
 //            "/auth/logout",
 //            "/auth/refresh",
             "/lesson/**",
-            "/flashcard/**"
+            "/flashcard/**",
+         // Cho swagger public
+        "/swagger-ui/**",
+        "/v3/api-docs/**",
+        "/swagger-ui.html"
 
     };
 
