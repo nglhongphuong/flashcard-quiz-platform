@@ -1,0 +1,17 @@
+package com.zotriverse.demo.dto.response;
+
+import lombok.*;
+import lombok.experimental.FieldDefaults;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+@FieldDefaults(level = AccessLevel.PRIVATE)
+public class FlashcardStudyStatsResponse {
+    int lessonId;
+    int ALL;
+    int REMEMBERED;
+    int NOT_LEARNED;
+    int NOT_REMEMBERED;
+}
