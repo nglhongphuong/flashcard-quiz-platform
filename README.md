@@ -39,9 +39,12 @@ Its purpose is to provide an **interactive and flexible study tool** that suppor
 ---
 
 ## Current Work in Progress
-- Real-time chat with Firebase to improve community interaction  
 - API testing with Postman (JSONPlaceholder) → [View API Collection](https://app.getpostman.com/join-team?invite_code=1896988308825b5f472a0ea81f8760bd4358a6cd73deca2c23a7815adc5ef95b&target_code=dcde96fbfb2901b36d80a2123632e938)  
-- Deployment on AWS  
+- Deploy backend (Render + MySQL Aiven): [API Swagger](https://flashcard-quiz-platform.onrender.com/zotri/swagger-ui/index.html)
+- Deploy frontend (Vercel/Netlify): [Demo Website -  processing...](<my_link>)
+- Real-time chat with Firebase to improve community interaction  (processing)
+
+
 ---
 ## Test Report
 Progress is being tracked in the following document:  
