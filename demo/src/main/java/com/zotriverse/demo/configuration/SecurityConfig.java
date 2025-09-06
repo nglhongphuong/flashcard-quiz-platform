@@ -89,7 +89,8 @@ public class SecurityConfig {
 
         CorsConfiguration config = new CorsConfiguration();
 
-        config.setAllowedOrigins(List.of("http://localhost:3000")); // frontend origin
+        // config.setAllowedOrigins(List.of("http://localhost:3000")); // frontend origin
+         config.setAllowedOrigins(List.of("https://zotriverse.onrender.com")); // frontend origin
         config.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
         config.setAllowedHeaders(List.of("Authorization", "Content-Type"));
         config.setExposedHeaders(List.of("Authorization"));
