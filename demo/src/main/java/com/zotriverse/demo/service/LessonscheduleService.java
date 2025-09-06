@@ -168,7 +168,7 @@ public class LessonscheduleService {
         </div>
 
         <p style="margin-top:20px; text-align:center;">
-             <a href="http://yourapp.com/home" 
+             <a href="https://zotriverse.onrender.com/" 
                  style="background:#A8D5BA; color:#fff; padding:12px 20px; text-decoration:none; border-radius:5px; font-weight:bold; display:inline-block;">
                 Quay lại học ngay
             </a>
