@@ -1,0 +1,209 @@
+/* LessonStats.css (prefix lesson-stats-) */
+.lesson-stats-root {
+  color: #fff;
+  min-height: 100vh;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.lesson-stats-title {
+  text-align: center;
+  margin-bottom: 18px;
+  font-size: 24px;
+}
+
+.lesson-stats-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.lesson-stats-filter select {
+  margin-left: 8px;
+  padding: 6px;
+  border-radius: 6px;
+  background: #111;
+  color: #fff;
+  border: 1px solid #333;
+}
+
+.lesson-stats-actions .btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  color: black;
+}
+
+/* pastel button common */
+.btn.pastel {
+  background-color: rgb(30, 154, 146);
+  color: white;
+  margin:5px;
+}
+
+/* sections */
+.lesson-stats-section {
+  margin-top: 22px;
+  border-radius: 8px;
+  padding: 12px;
+  background: #0e0e0e;
+  border: 1px solid #222;
+}
+
+.section-title {
+  margin: 0 0 12px 0;
+  font-size: 18px;
+}
+
+.section-body {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+/* left summary */
+.section-left {
+  flex: 1;
+}
+
+.stat-card {
+  background: #121212;
+  border: 1px solid #222;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.stat-item {
+  margin-bottom: 12px;
+}
+
+.stat-label {
+  color: #bbb;
+  font-size: 13px;
+}
+
+.stat-value {
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 4px;
+}
+
+/* right chart */
+.section-right {
+  flex: 1.4;
+  background: #0f0f0f;
+  padding: 12px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.section-right canvas {
+  width: 100% !important;
+  max-height: 280px;
+}
+
+/* month buttons */
+.per-month-actions {
+  margin-top: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.month-btn {
+  background: #222;
+  color: white;
+  border: 1px solid #333;
+  padding: 6px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* modal */
+.lesson-stats-modal {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.6);
+  z-index: 9999;
+}
+
+.lesson-stats-modal-card {
+  background: #111;
+  color: #000;
+  width: 720px;
+  max-width: 95%;
+  height: 480px;
+  border-radius: 10px;
+  padding: 14px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background: #ff8b94; /* pastel red for close */
+  border: none;
+  padding: 6px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: black;
+}
+
+.modal-title {
+  margin: 0 0 10px 0;
+  text-align: center;
+  color: white;
+}
+
+/* modal content scroll */
+.modal-body {
+  background: #0b0b0b;
+  border-radius: 6px;
+  padding: 8px;
+  overflow: auto;
+  scrollbar-color: #888 #222;
+  flex: 1;
+}
+
+/* modal table */
+.modal-table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #fff;
+}
+.modal-table th, .modal-table td {
+  padding: 8px;
+  border-bottom: 1px solid #222;
+  text-align: left;
+}
+.user-cell {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.user-avatar {
+  width: 42px;
+  height: 42px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid #333;
+}
+
+/* small responsiveness */
+@media (max-width: 900px) {
+  .section-body { flex-direction: column; }
+  .section-right canvas { max-height: 220px; }
+}

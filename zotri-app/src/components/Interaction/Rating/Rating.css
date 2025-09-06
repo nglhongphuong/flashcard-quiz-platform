@@ -1,0 +1,84 @@
+/* Dark overlay behind modal */
+.rating-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+/* Centered modal */
+.rating-modal {
+  background-color: #1e1e1e;
+  color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 320px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+/* Title */
+.rating-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Stars */
+.rating-stars {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.rating-star {
+  cursor: pointer;
+  color: #555;
+  transition: color 0.2s ease;
+}
+
+.rating-star.active {
+  color: gold;
+}
+
+.rating-star:hover {
+  color: gold;
+}
+
+/* Buttons */
+.rating-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.rating-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+/* Pastel colors */
+.rating-submit {
+  background-color: #a3d8f4; /* light pastel blue */
+  color: #1e1e1e;
+}
+
+.rating-submit:hover {
+  background-color: #89c2e6;
+}
+
+.rating-cancel {
+  background-color: #f4b3c2; /* light pastel pink */
+  color: #1e1e1e;
+}
+
+.rating-cancel:hover {
+  background-color: #e99aa9;
+}

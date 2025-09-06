@@ -1,0 +1,315 @@
+.lesson-detail-container {
+  color: white;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between; /* Cách đều 2 bên */
+  align-items: center;            /* Căn giữa theo chiều dọc */
+  gap: 30px;
+}
+
+.lesson-header-lesson-user {
+  background-color: #2a2a2a;
+  padding: 16px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column; 
+  gap: 12px;
+    position: relative;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.header-left h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.rating-info {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin-top: 4px;
+  gap: 4px;
+  color: #ccc;
+}
+
+.star {
+  color: gold;
+}
+
+.bookmark-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+  margin-top: 4px;
+}
+
+.header-bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.rate-btn,
+.schedule-btn {
+  background-color: #7c7c7c;
+  color: #dfdfdf;
+  border: none;
+  padding: 6px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  min-width: 100px;
+  transition: 0.2s;
+}
+
+.rate-btn:hover,
+.schedule-btn:hover {
+  background-color: #4c4c4c;
+}
+
+.function-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.function-buttons button {
+  flex: 1;
+  background-color: #333;
+  color: white;
+  padding: 12px 0;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.function-buttons button:hover {
+  background-color: #444;
+}
+
+.image-lesson{
+    width: 100px;
+    height:100px;
+    border-radius: 10px;
+}
+
+
+/* PHẦN 3 */
+.flashcard-section {
+  margin: 20px;
+  display: flex;
+ justify-content: center;  /* canh giữa theo chiều ngang */
+  align-items: center;      /* canh giữa theo chiều dọc (nếu cần) */
+  border-radius: 12px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* PHẦN 4 */
+.comment-section {
+  background-color: #2e2e2e;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+
+.avatar-author
+{
+    width:40px;
+    height:40px;
+    border-radius:50px;
+}
+
+.author {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+
+.author .avatar-author,
+.author .avatar-placeholder {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: #444;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+
+.flashcard-button-lesson-user {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #437eb4; /* pastel blue */
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.flashcard-button-lesson-user .icon {
+  font-size: 18px;
+}
+
+.flashcard-button-lesson-user:hover {
+  background-color: #90c3f5; /* darker pastel on hover */
+}
+
+/*=========================EDIT===============================*/
+.edit-form {
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  color: #ffffff;
+  border: 1px solid #333;
+}
+
+.edit-form input[type="text"],
+.edit-form textarea,
+.edit-form select,
+.edit-form input[type="file"] {
+  background-color: #2a2a2a;
+  color: white;
+  border: 1px solid #555;
+  padding: 10px;
+  width: 100%;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+.edit-form input::placeholder,
+.edit-form textarea::placeholder {
+  color: #aaa;
+}
+
+.edit-form label {
+  display: block;
+  margin-top: 10px;
+  color: #ccc;
+}
+
+.edit-form button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  margin-top: 15px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.edit-form button:hover {
+  background-color: #45a049;
+}
+
+.edit-form .success-msg {
+  background-color: #2e7d32;
+  color: #fff;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.edit-form .error-msg {
+  background-color: #b71c1c;
+  color: #fff;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.edit-icon-button {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  background: transparent;
+  padding:0px;
+  border: none;
+  color: white;
+  font-size: 1.4rem;
+  cursor: pointer;
+  z-index: 10;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.edit-icon-button:hover {
+  transform: scale(1.1);
+  color: #00ffff; /* Hover xanh biển nhẹ */
+}
+
+.image-preview img {
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-save {
+  background-color: #a8e6cf; /* xanh pastel */
+  color: #000;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.btn-cancel {
+  background-color: #ff8b94; /* đỏ pastel */
+  color: #ffffff;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+
+.back-button-lesson-user {
+  top: 1.5rem;
+  left: 1.5rem;
+  background-color: #349dba;
+  color: white;
+  padding: 0.5rem 1.2rem;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  padding:5px;
+  margin:10px;
+}
+.back-button-lesson-user:hover {
+  background-color: #444;
+}
+

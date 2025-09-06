@@ -1,0 +1,58 @@
+.usernameinfo-container {
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.usernameinfo-header {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.usernameinfo-cover {
+  width: 100%;
+  height: 250px;
+  background: url("https://www.pixelstalk.net/wp-content/uploads/2016/04/Blue-simple-wallpaper-nackgrounds-download.jpg") no-repeat center center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.usernameinfo-info {
+  position: relative;
+  text-align: center;
+  margin-top: -80px;
+}
+
+.usernameinfo-avatar {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  object-fit: cover;
+}
+
+.usernameinfo-name {
+  margin: 0.5rem 0 0 0;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.usernameinfo-username {
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.usernameinfo-details {
+  margin-top: 0.5rem;
+  color: #444;
+  font-size: 0.95rem;
+}
+
+.usernameinfo-lessons {
+  margin-top: 2rem;
+}
+
+.usernameinfo-lessons h3 {
+  margin-bottom: 1rem;
+}

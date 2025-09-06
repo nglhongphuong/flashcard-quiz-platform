@@ -1,0 +1,84 @@
+.quiz-study-page {
+  position: relative;
+  min-height: 200vh;
+}
+
+.quiz-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 12px;
+  margin-bottom: 24px;
+}
+
+/* Nút Back */
+.back-button-quiz-study {
+  background-color: #ffd6d6; /* pastel hồng */
+  color: #222;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.back-button-quiz-study:hover {
+  background-color: #ffb3b3;
+}
+
+/* Nút Create */
+.quiz-create-btn {
+  background-color: #aee6cf; /* pastel xanh lá mint */
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background 0.3s ease;
+}
+
+.quiz-create-btn:hover {
+  background-color: #93dbc0;
+}
+
+.quiz-filter-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  background-color: #1e1e1e;
+  padding: 16px;
+  margin: 20px auto;
+  border-radius: 12px;
+  width: fit-content;
+  color: white;
+}
+
+.quiz-filter-bar input[type="date"],
+.quiz-filter-bar select {
+  background-color: #2b2b2b;
+  color: white;
+  border: 1px solid #555;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.quiz-filter-bar input[type="date"]:focus,
+.quiz-filter-bar select:focus {
+  border-color: #90caf9;
+}
+
+.quiz-filter-bar select option {
+  background-color: #2b2b2b;
+  color: white;
+}

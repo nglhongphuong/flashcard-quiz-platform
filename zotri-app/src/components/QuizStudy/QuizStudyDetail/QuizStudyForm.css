@@ -1,0 +1,98 @@
+.quiz-form-container {
+  background-color: #2b2b2b;
+  padding: 24px;
+  border-radius: 16px;
+  color: #f8f8f8;
+  max-width: 700px;
+  margin: 10px auto;
+}
+.quiz-form-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #00ffff;
+}
+
+.quiz-form-container label {
+  display: block;
+  margin: 16px 0 8px;
+  font-weight: 500;
+}
+
+.quiz-form-container select,
+.quiz-form-container input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background-color: #121212;
+  color: #fff;
+  font-size: 16px;
+}
+
+.checkbox-group,
+.custom-flashcards {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.checkbox-group label,
+.flashcard-checkbox {
+  background-color: #3c3c3c;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s ease-in-out;
+}
+
+.flashcard-checkbox img {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.flashcard-checkbox:hover,
+.checkbox-group label:hover {
+  background-color: #3c3c50;
+}
+
+.quiz-form-container button {
+  margin-top: 20px;
+  padding: 10px 18px;
+  font-size: 16px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.quiz-form-container button:first-child {
+  background-color: #00cc88;
+  color: white;
+  margin-right: 12px;
+}
+
+
+.quiz-form-container button:first-child:hover {
+  background-color: #00b07a;
+}
+
+.quiz-form-container button:last-child {
+  background-color: #ba5353;
+  color: white;
+}
+
+.quiz-form-container button:last-child:hover {
+  background-color: #444;
+}
+
+.quiz-form-container p {
+  margin: 8px 0;
+  font-size: 14px;
+  color: #ffcc00;
+}

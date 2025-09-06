@@ -1,0 +1,12 @@
+
+.body-content {
+  flex: 1;
+  padding: 2rem;
+  height: 100vh;
+  overflow-y: auto;
+  background-color: #1e1e1e;
+  transition: all 0.3s;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  color:white;
+
+}

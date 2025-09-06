@@ -1,0 +1,89 @@
+.create-lesson-form {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #2d2d2d;
+  border-radius: 12px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.create-lesson-form h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  color: #43dffa;
+}
+
+.create-lesson-form form > div {
+  margin-bottom: 1.2rem;
+}
+
+.create-lesson-form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #f9f9f9;
+}
+
+.create-lesson-form input[type="text"],
+.create-lesson-form textarea,
+.create-lesson-form select {
+  width: 100%;
+  padding: 0.7rem;
+  border-radius: 6px;
+  font-size: 1rem;
+    background-color: #222; /* nền đen nhẹ */
+  color: #fff;             /* chữ trắng */
+  border: 1px solid #555;
+}
+
+.create-lesson-form textarea {
+  resize: vertical;
+}
+
+.create-lesson-form .flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.upload-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #316f8c;
+  color: #555;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.upload-label:hover {
+  background-color: #a0a0a0;
+}
+
+.create-lesson-form .btn {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  background-color: #4caf50;
+  color: white;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.create-lesson-form .btn:hover {
+  background-color: #45a049;
+}
+
+.text-red-500 {
+  color: #e63946;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+}

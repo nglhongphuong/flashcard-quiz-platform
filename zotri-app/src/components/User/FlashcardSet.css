@@ -1,0 +1,201 @@
+.flashcardset-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.flashcardset-card {
+  background-color: #2a2a2a;
+  padding: 16px;
+  border-radius: 12px;
+  position: relative;
+}
+
+
+
+.flashcardset-definition {
+  color: white;
+  font-size: 14px;
+  font-style: italic;
+  margin-bottom: 8px;
+}
+
+.flashcardset-content-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flashcardset-image {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 12px;
+}
+
+.flashcardset-placeholder {
+  width: 50px;
+  height: 50px;
+  background-color: #555;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+}
+
+.flashcardset-word-def {
+  flex-grow: 1;
+}
+
+.flashcardset-word {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+.flashcardset-def {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.flashcardset-menu-icon {
+  position: relative;
+  cursor: pointer;
+  color: white;
+  padding: 4px;
+}
+
+.flashcardset-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #444;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+  z-index: 10;
+}
+
+.flashcardset-dropdown-item {
+  padding: 8px 12px;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.flashcardset-dropdown-item:hover {
+  background-color: #666;
+}
+
+.flashcardset-audio-icon {
+    margin: 10px;
+  cursor: pointer;
+  color: #ffffff;
+  transition: color 0.2s;
+}
+
+.flashcardset-audio-icon:hover {
+  color: #20a5c2;
+}
+
+
+.flashcardset-edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  
+}
+
+.flashcardset-input {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px  #ccc;
+  font-size: 16px;
+  background-color:#464646;
+  color:white;
+}
+
+.flashcardset-edit-buttons {
+  display: flex;
+  gap: 20px;
+
+}
+
+.flashcardset-image-preview {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-top: 8px;
+}
+
+
+.msg {
+  color: #ffffff;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  padding: 8px;
+  border-radius: 6px;
+  background-color: #26c29e;
+}
+
+.flashcardset-edit-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.flashcardset-edit-buttons button {
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.flashcardset-edit-buttons .btn-save {
+  background-color: #81b6ef; /* xanh biển */
+}
+
+.flashcardset-edit-buttons .btn-cancel {
+  background-color: #ae434e; /* đỏ */
+}
+
+.flashcardset-edit-buttons .icon {
+  color: white;
+}
+
+
+.custom-file-input {
+  background-color: #d4edda; /* xanh lá pastel */
+  border: 1px solid #c3e6cb;
+  padding: 8px;
+  border-radius: 5px;
+  color: #155724; /* xanh đậm để dễ đọc */
+  cursor: pointer;
+  font-size: 14px;
+  width: 100%;
+}
+
+.custom-file-input::file-selector-button {
+  background-color: #a8e6cf; /* nút chọn file xanh pastel */
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  color: #155724;
+  cursor: pointer;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.custom-file-input:hover::file-selector-button {
+  background-color: #9de3c3; /* hover nhẹ */
+}

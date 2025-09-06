@@ -1,0 +1,53 @@
+.login-container {
+    margin-top: 3rem;
+}
+
+.login-title {
+  color: #44c8ec;
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.register-image-caption {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+
+.login-box {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    background-color: #2c2c2c;
+    color: white;
+}
+
+.login-box h1 {
+    color: white;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.login-input {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    background-color: #ffffff;
+    color: white;
+    border: 1px solid white;
+}
+
+.login-submit-btn {
+    margin-top: 1rem;
+    width: 100%;
+    color: #ffffff;
+    background-color: rgb(109, 109, 109);
+    border: none;
+}
+
+.login-register-btn {
+    margin-top: 1rem;
+    text-align: center;
+}

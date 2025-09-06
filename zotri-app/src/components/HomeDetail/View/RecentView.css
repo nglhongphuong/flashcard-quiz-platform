@@ -1,0 +1,41 @@
+.recent-view-section {
+  margin-top: 40px;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: white;
+}
+
+.loading-container {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.empty-message {
+  color: #ccc;
+  font-style: italic;
+}
+
+.recent-lesson-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  max-height: 500px;
+  overflow-y: auto;
+  padding-right: 8px;
+}
+
+.recent-lesson-grid::-webkit-scrollbar {
+  width: 6px;
+}
+
+.recent-lesson-grid::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 3px;
+}
+

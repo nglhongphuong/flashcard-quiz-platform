@@ -1,0 +1,56 @@
+.part-content-container {
+  padding: 40px;
+  background-color: #121212;
+  color: white;
+}
+
+.welcome-section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.welcome-title {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.welcome-subtitle {
+  font-size: 1.1rem;
+  opacity: 0.85;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.part-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.part-card {
+  padding: 20px;
+  border-radius: 12px;
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.part-card h2 {
+  margin-bottom: 10px;
+}
+
+.part-btn {
+  margin-top: 20px;
+  padding: 10px 16px;
+  background: rgba(0,0,0,0.75);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.part-btn:hover {
+  background: rgba(0,0,0,0.9);
+}

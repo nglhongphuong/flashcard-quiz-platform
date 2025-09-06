@@ -1,0 +1,59 @@
+.flashcard-container-flashcardhome{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.action-buttons-flashcardhome button {
+  padding: 10px 16px;
+  margin:5px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.skip-btn {
+  background: #ffc107;
+  color: #000;
+}
+
+.remember-btn {
+  background: #28a745;
+  color: #fff;
+}
+
+.notremember-btn {
+  background: #dc3545;
+  color: #fff;
+}
+
+.finish-btn-wrapper {
+  margin-top: 30px;
+}
+
+.finish-btn {
+  background: #6c757d;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+
+.finish-btn:hover {
+  background: #5a6268;
+}
+
+.no-flashcard {
+  text-align: center;
+  font-size: 18px;
+  color: #777;
+  margin-top: 40px;
+}
+

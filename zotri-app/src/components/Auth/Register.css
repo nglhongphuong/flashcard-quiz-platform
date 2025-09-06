@@ -1,0 +1,52 @@
+/* Register.css */
+
+.register-container {
+  margin-top: 3rem;
+}
+
+.register-image-section {
+  text-align: center;
+}
+
+.register-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.register-headline {
+  margin-top: 1.5rem;
+  color: #44c8ec;
+}
+
+.register-subtext {
+  font-size: 1.25rem;
+  color: #6c757d;
+}
+
+.register-form-wrapper {
+  padding: 2rem;
+  border-radius: 0.5rem;
+  background-color:  #2c2c2c;
+}
+
+.register-title {
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+}
+
+.register-form .form-control,
+.register-form .form-select {
+  margin-bottom: 1rem;
+  background-color: #2c2c2c;
+    color: white;
+}
+.register-form ::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+.register-button {
+  width: 100%;
+}

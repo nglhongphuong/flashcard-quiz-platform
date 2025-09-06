@@ -1,0 +1,164 @@
+.lesson-detail-container {
+  color: white;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between; /* Cách đều 2 bên */
+  align-items: center;            /* Căn giữa theo chiều dọc */
+  gap: 30px;
+}
+
+.lesson-header {
+  background-color: #2a2a2a;
+  padding: 16px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column; 
+  gap: 12px;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.header-left h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.rating-info {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin-top: 4px;
+  gap: 4px;
+  color: #ccc;
+}
+
+.star {
+  color: gold;
+}
+
+.bookmark-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+  margin-top: 4px;
+}
+
+.header-bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.rate-btn,
+.schedule-btn {
+  background-color: #7c7c7c;
+  color: #dfdfdf;
+  border: none;
+  padding: 6px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  min-width: 100px;
+  transition: 0.2s;
+}
+
+.rate-btn:hover,
+.schedule-btn:hover {
+  background-color: #4c4c4c;
+}
+
+.function-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.function-buttons button {
+  flex: 1;
+  background-color: #333;
+  color: white;
+  padding: 12px 0;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.function-buttons button:hover {
+  background-color: #444;
+}
+
+.image-lesson{
+    width: 100px;
+    height:100px;
+    border-radius: 10px;
+}
+
+
+/* PHẦN 3 */
+.flashcard-section {
+  margin: 20px;
+  display: flex;
+ justify-content: center;  /* canh giữa theo chiều ngang */
+  align-items: center;      /* canh giữa theo chiều dọc (nếu cần) */
+  border-radius: 12px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* PHẦN 4 */
+.comment-section {
+  background-color: #2e2e2e;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+
+.avatar-author
+{
+    width:40px;
+    height:40px;
+    border-radius:50px;
+}
+
+.author {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+/* Gộp avatar và tên vào cụm bên trái */
+.author .avatar-author,
+.author .avatar-placeholder {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: #444;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+

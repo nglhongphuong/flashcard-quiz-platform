@@ -1,0 +1,3 @@
+.lesson-admin-container {
+    overflow-x: hidden; /* hoặc overflow: hidden nếu muốn ẩn cả dọc */
+}

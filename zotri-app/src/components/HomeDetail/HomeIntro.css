@@ -1,0 +1,63 @@
+.home-intro {
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.home-intro-card {
+  max-width: 650px;
+  text-align: center;
+  background-color: rgba(62, 62, 62, 0.08); /* pastel pink overlay */
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 8px 30px rgba(19, 19, 19, 0.15);
+}
+
+.home-intro-title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #5bcee5; /* pastel pink */
+  margin-bottom: 20px;
+}
+
+.home-intro-text {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: #f0f0f0;
+  margin-bottom: 35px;
+}
+
+.home-intro-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.home-intro-btn {
+  background-color: #b8e0d2; /* pastel mint */
+  color: #0d0d0d;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.home-intro-btn:hover {
+  background-color: #a2d2c4;
+  transform: translateY(-2px);
+}
+
+.home-intro-btn.secondary {
+  background-color: #ffd6a5; /* pastel orange */
+}
+
+.home-intro-btn.secondary:hover {
+  background-color: #ffcb8e;
+}

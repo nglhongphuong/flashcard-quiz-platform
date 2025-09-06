@@ -1,0 +1,281 @@
+:root{
+  --card:#2b2b2b;
+  --muted:#bdbdbd;
+  --pastel:#70c3c4; /* pastel green */
+  --pastel-2:#66dad4; /* accent */
+  --accent:#ffd166;
+  --radius:14px;
+  --pad:18px;
+}
+
+.ts-page{
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 24px;
+  padding: 24px;
+  background: var(--bg);
+  color: #fff;
+  min-height: calc(100vh - 40px);
+  box-sizing: border-box;
+}
+
+/* Left panel */
+.ts-left{
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+}
+
+/* topbar */
+.ts-topbar{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+.ts-back{
+  background: transparent;
+  border: 1px solid #333;
+  color: var(--muted);
+  padding:8px 10px;
+  border-radius:8px;
+  cursor:pointer;
+}
+.ts-title{ flex:1; }
+.ts-word-label{ font-size:0.9rem; color:var(--muted); }
+.ts-word{ margin:4px 0 0; font-size:1.6rem; color:#fff; }
+.ts-audio{
+  background:transparent;
+  border:1px solid #333;
+  padding:8px;
+  border-radius:8px;
+  color:var(--muted);
+  cursor:pointer;
+}
+
+/* cards container */
+.ts-cards { display:flex; flex-direction:column; gap:20px; }
+
+/* card */
+.ts-card{
+  background:var(--card);
+  border-radius:var(--radius);
+  padding:20px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+  transition: transform .12s ease, box-shadow .12s ease;
+  border: 1px solid rgba(255,255,255,0.03);
+}
+.ts-card.active{
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.6);
+  border-color: rgba(112,196,115,0.12);
+}
+
+/* card header */
+.ts-card-header{ display:flex; justify-content:space-between; color:var(--muted); font-size:0.85rem; margin-bottom:8px; }
+.ts-card-word{ font-size:1.25rem; margin:6px 0; color:#fff; }
+
+/* input & label */
+.ts-label{ color:var(--muted); margin-top:10px; display:block; font-weight:600; }
+.ts-input{
+  width:100%;
+  padding:12px;
+  margin-top:8px;
+  border-radius:10px;
+  border:none;
+  background:#444;
+  color:#fff;
+}
+
+/* definition pill */
+.ts-def-pill{
+  display:inline-block;
+  background:#3a3a3a;
+  padding:8px 12px;
+  border-radius:10px;
+  color:var(--muted);
+  margin:8px 0;
+}
+
+/* choices */
+.ts-choices, .ts-choices-grid{ display:flex; gap:12px; margin-top:12px; flex-wrap:wrap; }
+.ts-choice, .ts-mc{
+  padding:10px 18px;
+  border-radius:10px;
+  border:1px solid rgba(255,255,255,0.06);
+  background:#3b3b3b;
+  color:var(--muted);
+  cursor:pointer;
+  transition: background .12s ease, color .12s ease, transform .08s ease;
+}
+.ts-choice:hover, .ts-mc:hover{ transform: translateY(-2px); }
+
+.ts-choice.selected, .ts-mc.selected{
+  background: linear-gradient(90deg,var(--pastel), #95d4d9);
+  color:#052004;
+  border: none;
+  box-shadow: 0 6px 18px rgba(112,196,115,0.14);
+}
+
+/* right panel */
+.ts-right{
+  position:sticky;
+  top:24px;
+  height:fit-content;
+}
+
+.ts-right-box{
+  background:var(--card);
+  padding:18px;
+  border-radius:14px;
+  border:1px solid rgba(255,255,255,0.03);
+}
+
+.ts-right-header{ display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; color:var(--muted);}
+.ts-right-title{ font-weight:700; color:#fff; }
+.ts-timer{ font-weight:700; color:var(--accent); }
+
+.ts-grid{
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap:10px;
+  margin-bottom:16px;
+}
+
+.ts-circle{
+  width:44px;
+  height:44px;
+  border-radius:50%;
+  background:#3a3a3a;
+  color:var(--muted);
+  border:1px solid rgba(255,255,255,0.04);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  cursor:pointer;
+}
+.ts-circle.answered{
+  background:linear-gradient(90deg,var(--pastel),var(--pastel-2));
+  color:#06210f;
+  box-shadow: 0 8px 20px rgba(102,218,212,0.12);
+  border:none;
+}
+.ts-circle.active{ outline: 2px solid rgba(255,255,255,0.04); transform: scale(1.05); }
+
+.ts-actions{ display:flex; gap:8px; justify-content:center; align-items:center; }
+.ts-nav{
+  padding:8px 12px;
+  background:#333;
+  color:var(--muted);
+  border-radius:8px;
+  border:none;
+  cursor:pointer;
+}
+.ts-complete{
+  padding:10px 14px;
+  background: linear-gradient(90deg,var(--pastel), #95d5d2);
+  color:#052004;
+  border:none;
+  border-radius:10px;
+  font-weight:700;
+  cursor:pointer;
+}
+
+
+.ts-question {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* khoảng cách giữa chữ và nút */
+}
+
+.ts-card-word {
+  color: #fff; /* chữ trắng */
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.audio-player-test {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: #ffcad4; /* pastel */
+  font-size: 1.2rem;
+  padding: 6px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.audio-player-test:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+}
+
+/* Căn hàng ngang cho word + icon loa */
+.ts-question {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* TRUE/FALSE layout */
+.ts-choices.true-false {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.ts-choices.true-false .ts-choices {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.ts-choice {
+  background-color: #444;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  min-width: 120px;
+  font-size: 16px;
+  text-align: center;
+  transition: background-color 0.2s ease;
+}
+
+.ts-choice:hover {
+  background-color: #666;
+}
+
+.ts-choice.selected {
+  background-color: #007bff;
+}
+
+/* MULTIPLE_CHOICE grid style */
+.ts-choices-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.ts-mc {
+  background-color: #555;
+  color: #fff;
+  border: none;
+  padding: 14px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  min-height: 60px;
+  transition: background-color 0.2s ease;
+}
+
+.ts-mc:hover {
+  background-color: #777;
+}
+
+.ts-mc.selected {
+  background-color: #007bff;
+}

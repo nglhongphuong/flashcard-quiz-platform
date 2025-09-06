@@ -1,0 +1,46 @@
+.admin-dashboard-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #121212;
+  color: #e0e0e0;
+  border-radius: 12px;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.admin-dashboard-container h1 {
+  margin-bottom: 12px;
+  font-size: 2.8rem;
+  color: #6cc9cf;
+}
+
+.admin-dashboard-container p {
+  margin-bottom: 30px;
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+.admin-dashboard-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.admin-btn {
+  background-color: #6cc9cf;
+  color: #121212;
+  border: none;
+  padding: 16px 28px;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  min-width: 180px;
+}
+
+.admin-btn:hover {
+  background-color: #52a8af;
+  color: white;
+}

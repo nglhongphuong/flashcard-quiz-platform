@@ -1,0 +1,60 @@
+.quiz-result-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.quiz-result-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin:20px;
+}
+
+.chart-box {
+  width:300px;
+  height:300px;
+}
+
+.stats-box {
+  text-align: left;
+  font-size: 18px;
+}
+
+.quiz-result-actions {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+
+
+.quiz-result-actions button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: 0;
+  border-radius: 8px;
+  color: rgb(43, 43, 43);
+  transition: background 0.2s ease;
+}
+
+/* Nút đầu tiên - xanh pastel */
+.quiz-result-actions button:first-child {
+  background: #a3d9ff; /* xanh pastel */
+}
+
+.quiz-result-actions button:first-child:hover {
+  background: #89c7f5; /* xanh pastel đậm hơn khi hover */
+}
+
+/* Nút thứ hai - vàng pastel */
+.quiz-result-actions button:last-child {
+  background: #ffe29a; /* vàng pastel */
+}
+
+.quiz-result-actions button:last-child:hover {
+  background: #ffd56b; /* vàng pastel đậm hơn khi hover */
+}
+
