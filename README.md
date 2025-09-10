@@ -8,9 +8,10 @@
 1. [Introduction & Objectives](#1-introduction--objectives)  
 2. [Main Features](#2-main-features)  
 3. [System Design](#3-system-design)   
-4. [Technologies Used](#4-technologies-used)  
-5. [Results](#5-results)  
-6. [Limitations & Future Work](#6-limitations--future-work)
+4. [Technologies Used](#4-technologies-used)
+5. [Illustrations](#5-illustrations) 
+6. [Results](#6-results)  
+7. [Limitations & Future Work](#77-limitations--future-work)
 
 ## 1. Introduction & Objectives
 This project was built as an **individual capstone project**.  
@@ -57,7 +58,19 @@ Its purpose is to provide an **interactive and flexible study tool** that suppor
 - **Other Services:** Gmail API for notifications  
 
 
-## 5. Results
+## 5. Illustrations
+Below are some screenshots of the platform:
+
+- **Homepage**  
+  ![Homepage](YOUR_IMAGE_LINK)
+
+- **Automatic Lesson Generation**  
+  ![Auto Lesson Generation](YOUR_IMAGE_LINK)
+
+- **Quiz Learning Modes**  
+  ![Quiz Learning](YOUR_IMAGE_LINK)
+
+## 6. Results
 - **Backend Deployment:** [API Swagger](https://flashcard-quiz-platform.onrender.com/zotri/swagger-ui/index.html)  
 - **Frontend Deployment:** [Demo Website](https://zotriverse.onrender.com/)  
 - **Database:** MySQL hosted on Aiven  
@@ -66,7 +79,7 @@ Its purpose is to provide an **interactive and flexible study tool** that suppor
 - **Test Report:** [Google Sheet](https://docs.google.com/spreadsheets/d/1kXi8L5MAiMwSSL7exDL4D8HUgQAzsIwN/edit?usp=sharing&ouid=112268585182906922050&rtpof=true&sd=true)  
 - **Project Report Latex (Full thesis):** [View Full Report (PDF)](https://github.com/nglhongphuong/flashcard-quiz-platform/blob/main/%C4%90%E1%BB%93_%C3%81n_2025_b%E1%BA%A3n_final_01.pdf)
 
-## 6. Limitations & Future Work
+## 7. Limitations & Future Work
 ### Limitations
 - Web performance not yet optimized, especially on mobile devices.  
 - UI lacks consistency across different screen sizes.  
