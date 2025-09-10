@@ -7,9 +7,7 @@
 ## Table of Contents
 1. [Introduction & Objectives](#1-introduction--objectives)  
 2. [Main Features](#2-main-features)  
-3. [System Design](#3-system-design)  
-   - [Use Case Diagram](#use-case-diagram)  
-   - [Database Schema](#database-schema)  
+3. [System Design](#3-system-design)   
 4. [Technologies Used](#4-technologies-used)  
 5. [Results](#5-results)  
 6. [Limitations & Future Work](#6-limitations--future-work)
