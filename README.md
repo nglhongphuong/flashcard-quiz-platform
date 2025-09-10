@@ -64,8 +64,7 @@ Its purpose is to provide an **interactive and flexible study tool** that suppor
 - **API Testing:** Postman (JSONPlaceholder) → [View API Collection](https://app.getpostman.com/join-team?invite_code=1896988308825b5f472a0ea81f8760bd4358a6cd73deca2c23a7815adc5ef95b&target_code=dcde96fbfb2901b36d80a2123632e938)  
 - **AI-powered Flashcard Generation:** FastAPI + HuggingFace Space → [Demo App](https://huggingface.co/spaces/nglhongphuong/flashcard_generate)  
 - **Test Report:** [Google Sheet](https://docs.google.com/spreadsheets/d/1kXi8L5MAiMwSSL7exDL4D8HUgQAzsIwN/edit?usp=sharing&ouid=112268585182906922050&rtpof=true&sd=true)  
-- **Project Report (Full thesis):** [View Full Report (PDF)]([https://example.com/your-project-report.pdf](https://github.com/nglhongphuong/flashcard-quiz-platform/blob/main/%C4%90%E1%BB%93_%C3%81n_2025_b%E1%BA%A3n_final_01.pdf))
-
+- **Project Report Latex (Full thesis):** [View Full Report (PDF)](https://github.com/nglhongphuong/flashcard-quiz-platform/blob/main/%C4%90%E1%BB%93_%C3%81n_2025_b%E1%BA%A3n_final_01.pdf)
 
 ## 6. Limitations & Future Work
 ### Limitations
