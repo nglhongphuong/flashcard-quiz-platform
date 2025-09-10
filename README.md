@@ -47,7 +47,10 @@ Its purpose is to provide an **interactive and flexible study tool** that suppor
 - **Security:** Encrypted passwords, secure session management  
 
 ## 3. System Design
-- **Project Report (Full thesis):** [View Full Report (PDF)](https://github.com/nglhongphuong/flashcard-quiz-platform/blob/main/%C4%90%E1%BB%93_%C3%81n_2025_b%E1%BA%A3n_final_01.pdf) _(see details in the project report)_
+- **System Architecture**  
+  ![System Architecture](images/architecture.png)
+- **Project Report (Full thesis):** [View Full Report (PDF)](https://github.com/nglhongphuong/flashcard-quiz-platform/blob/main/%C4%90%E1%BB%93_%C3%81n_2025_b%E1%BA%A3n_final_01.pdf)  
+  _(see Chapter 3: System Architecture Analysis & Design for more details)_
 
 
 ## 4. Technologies Used
@@ -74,6 +77,9 @@ Below are some screenshots of the platform:
 
 - **View Lesson**  
   ![View Lesson](images/view-lesson.png)
+
+- **Flashcard Creation Methods**  
+  ![Flashcard Creation](images/flashcard-create.png)
   
 - **More details:** See **Chapter 4 - Section 2 (Evaluation)** in the [Full Project Report](https://github.com/nglhongphuong/flashcard-quiz-platform/blob/main/%C4%90%E1%BB%93_%C3%81n_2025_b%E1%BA%A3n_final_01.pdf).
 
