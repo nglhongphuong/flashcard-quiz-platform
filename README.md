@@ -60,15 +60,22 @@ Its purpose is to provide an **interactive and flexible study tool** that suppor
 
 ## 5. Illustrations
 Below are some screenshots of the platform:
+- **Homepage (Authenticated User)**  
+  ![Homepage - Authenticated](images/home-auth.png)
 
-- **Homepage**  
-  ![Homepage](YOUR_IMAGE_LINK)
+- **Homepage (Create Lesson Entry)**  
+  ![Homepage - Create Lesson](images/home-create-lesson.png)
 
 - **Automatic Lesson Generation**  
-  ![Auto Lesson Generation](YOUR_IMAGE_LINK)
+  ![Create Lesson - Auto](images/create-lesson-auto.png)
 
-- **Quiz Learning Modes**  
-  ![Quiz Learning](YOUR_IMAGE_LINK)
+- **Manual Lesson Creation**  
+  ![Create Lesson - Manual](images/create-lesson-manual.png)
+
+- **View Lesson**  
+  ![View Lesson](images/view-lesson.png)
+  
+- **More details:** See **Chapter 4 - Section 2 (Evaluation)** in the [Full Project Report](https://github.com/nglhongphuong/flashcard-quiz-platform/blob/main/%C4%90%E1%BB%93_%C3%81n_2025_b%E1%BA%A3n_final_01.pdf).
 
 ## 6. Results
 - **Backend Deployment:** [API Swagger](https://flashcard-quiz-platform.onrender.com/zotri/swagger-ui/index.html)  
