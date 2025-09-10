@@ -1,23 +1,36 @@
 # Flashcard and Quiz Learning Platform
 
-- **Personal capstone project (Jul 2025 – Sep 2025, 10 weeks)**
-   A web-based learning platform that integrates flashcards and quizzes to help students review, memorize, and test knowledge more effectively. The system combines three main approaches: learning with flashcards, practicing with quizzes, and taking tests.
-## Overview
-- This project was built as an **individual capstone project**.  
+- **Personal Capstone Project (Jul 2025 – Sep 2025, 10 weeks)**  
+  A web-based learning platform that integrates flashcards and quizzes to help students review, memorize, and test knowledge more effectively.  
+  The system combines three main approaches: **learning with flashcards**, **practicing with quizzes**, and **taking tests**.
+
+## Table of Contents
+1. [Introduction & Objectives](#1-introduction--objectives)  
+2. [Main Features](#2-main-features)  
+3. [System Design](#3-system-design)  
+   - [Use Case Diagram](#use-case-diagram)  
+   - [Database Schema](#database-schema)  
+4. [Technologies Used](#4-technologies-used)  
+5. [Results](#5-results)  
+6. [Limitations & Future Work](#6-limitations--future-work)
+
+## 1. Introduction & Objectives
+This project was built as an **individual capstone project**.  
 Its purpose is to provide an **interactive and flexible study tool** that supports both personal learning and community engagement.
-## Main Features
+
+## 2. Main Features
+
 ### User Functions
 - **Account Management**
-  - Register a new account
-  - Log in and log out
-  - Update personal information  
+  - Register, log in, log out
+  - Update personal information
 
 - **Learning and Practice**
   - Flashcards: flip cards, mark progress
-  - Quiz: generate practice questions based on selected flashcards
+  - Quiz: generate practice questions from selected flashcards
   - Test: create timed tests with customizable settings
-  - Lesson Creation: manual input, upload from Excel/Word, or automatic generation with Gemini API
-  - Study Scheduling: set reminders via Gmail notifications  
+  - Lesson Creation: manual input, upload from Excel/Word, or automatic generation (Gemini API & FastAPI HuggingFace integration)
+  - Study Scheduling: Gmail reminders & notifications
 
 - **Community Interaction**
   - Join and study lessons created by others
@@ -29,25 +42,56 @@ Its purpose is to provide an **interactive and flexible study tool** that suppor
 - Moderate lessons and content shared by users
 - Generate statistics and reports about user activity and lesson effectiveness
 
+### Non-Functional Requirements
+- **Usability:** Simple and intuitive user interface  
+- **Compatibility:** Works on Chrome, Firefox, Edge  
+- **Security:** Encrypted passwords, secure session management  
 
-## Non-Functional Requirements
-- **Usability:** Simple and intuitive user interface, clear system messages  
-- **Compatibility:** Works on common browsers (Chrome, Firefox, Edge)  
-- **Security:** Passwords are encrypted; secure session management  
+## 3. System Design
 
+### Use Case Diagram
+*(Insert diagram here)*  
 
-## Current Work in Progress
-- API testing with Postman (JSONPlaceholder) → [View API Collection](https://app.getpostman.com/join-team?invite_code=1896988308825b5f472a0ea81f8760bd4358a6cd73deca2c23a7815adc5ef95b&target_code=dcde96fbfb2901b36d80a2123632e938)  
-- Deploy backend (Render + MySQL Aiven): [API Swagger](https://flashcard-quiz-platform.onrender.com/zotri/swagger-ui/index.html)
-- Deploy frontend (render): [Demo Website](https://zotriverse.onrender.com/)
+### Database Schema
+*(Insert ERD / database schema image here)*  
 
-## Test Report
-Progress is being tracked in the following document:  
-[View Test Report](https://docs.google.com/spreadsheets/d/1kXi8L5MAiMwSSL7exDL4D8HUgQAzsIwN/edit?usp=sharing&ouid=112268585182906922050&rtpof=true&sd=true)
----
-## Technologies
+## 4. Technologies Used
 - **Frontend:** ReactJS  
-- **Backend:** Spring Boot, FastAPI (Gemini API integration)  
-- **Database:** MySQL  
-- **Testing:** Postman
-- **Other:** Gmail API for notifications  
+- **Backend:** Spring Boot, FastAPI (Gemini API integration + HuggingFace for automatic flashcard generation)  
+- **Database:** MySQL (Aiven)  
+- **Testing:** Postman (API testing with JSONPlaceholder)  
+- **Other Services:** Gmail API for notifications  
+
+
+## 5. Results
+- **Backend Deployment:** [API Swagger](https://flashcard-quiz-platform.onrender.com/zotri/swagger-ui/index.html)  
+- **Frontend Deployment:** [Demo Website](https://zotriverse.onrender.com/)  
+- **Database:** MySQL hosted on Aiven  
+- **API Testing:** Postman (JSONPlaceholder) → [View API Collection](https://app.getpostman.com/join-team?invite_code=1896988308825b5f472a0ea81f8760bd4358a6cd73deca2c23a7815adc5ef95b&target_code=dcde96fbfb2901b36d80a2123632e938)  
+- **AI-powered Flashcard Generation:** FastAPI + HuggingFace Space → [Demo App](https://huggingface.co/spaces/nglhongphuong/flashcard_generate)  
+- **Test Report:** [Google Sheet](https://docs.google.com/spreadsheets/d/1kXi8L5MAiMwSSL7exDL4D8HUgQAzsIwN/edit?usp=sharing&ouid=112268585182906922050&rtpof=true&sd=true)  
+- **Project Report (Full thesis):** [View Full Report (PDF)](https://example.com/your-project-report.pdf)
+
+
+## 6. Limitations & Future Work
+### Limitations
+- Web performance not yet optimized, especially on mobile devices.  
+- UI lacks consistency across different screen sizes.  
+- Lesson management by categories is not supported, limiting content organization and search.  
+- Dependence on free-tier services:  
+  - **Render:** app sleeps after inactivity, requires 2–4 minutes to restart.  
+  - **Aiven MySQL:** limited resources (1 node, low CPU/RAM/storage).  
+  - **Gemini API (free plan):** limited requests per minute/day and token usage.  
+- Study reminder feature is still basic (default email after 3 days, manual scheduling only).  
+- Community interaction features remain limited (few channels for collaboration and sharing).  
+
+### Future Work
+- Refactor platform using **microservices architecture** for scalability and maintainability.  
+- Apply **machine learning/deep learning** for more advanced automatic content generation.  
+- Expand social features: real-time chat, friend system, user following.  
+- Add **lesson categorization and recommendation system** for personalized study paths.  
+- Support **SSO login** (Google, Facebook, Gmail) for convenience and security.  
+- Enable **lesson sharing via link or QR code** for quick access.  
+- Develop an **intelligent study schedule manager** for personalized and flexible learning plans.  
+- Improve mobile responsiveness and provide a **dedicated mobile app** (React Native).
+
