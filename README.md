@@ -29,23 +29,18 @@ Its purpose is to provide an **interactive and flexible study tool** that suppor
 - Moderate lessons and content shared by users
 - Generate statistics and reports about user activity and lesson effectiveness
 
----
 
 ## Non-Functional Requirements
 - **Usability:** Simple and intuitive user interface, clear system messages  
 - **Compatibility:** Works on common browsers (Chrome, Firefox, Edge)  
 - **Security:** Passwords are encrypted; secure session management  
 
----
 
 ## Current Work in Progress
 - API testing with Postman (JSONPlaceholder) → [View API Collection](https://app.getpostman.com/join-team?invite_code=1896988308825b5f472a0ea81f8760bd4358a6cd73deca2c23a7815adc5ef95b&target_code=dcde96fbfb2901b36d80a2123632e938)  
 - Deploy backend (Render + MySQL Aiven): [API Swagger](https://flashcard-quiz-platform.onrender.com/zotri/swagger-ui/index.html)
-- Deploy frontend (render): [Demo Website -  processing...](https://zotriverse.onrender.com/)
-- Real-time chat with Firebase to improve community interaction  (processing)
+- Deploy frontend (render): [Demo Website](https://zotriverse.onrender.com/)
 
-
----
 ## Test Report
 Progress is being tracked in the following document:  
 [View Test Report](https://docs.google.com/spreadsheets/d/1kXi8L5MAiMwSSL7exDL4D8HUgQAzsIwN/edit?usp=sharing&ouid=112268585182906922050&rtpof=true&sd=true)
